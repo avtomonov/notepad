@@ -16,6 +16,8 @@ settings_data.json
 ***
 предподгрузка шрифтов чтобы не скакали 
 -----------------------------------
+```
 <link rel="preload" href="{{ 'Geometria.woff' | asset_url }}" as="font" type="font/woff2" crossorigin="">  
+```
 ***
 
