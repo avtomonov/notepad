@@ -1,5 +1,16 @@
 # notepad
 ***
+клик вне элемента
+-----------------------------------
+$(document).on('click', function(e){
+    if (!$(e.target).parents('.product-info__select').length || !$(e.target).hasClass('product-info__select')) {
+        $('.product-info__select__drop').slideUp(300, function () {});
+        $('.product-info__select').removeClass('active')
+    }
+})
+***
+
+***
 кеширование по обновлениею категории
 -----------------------------------
 {% cache collections.last_updated_at %}
